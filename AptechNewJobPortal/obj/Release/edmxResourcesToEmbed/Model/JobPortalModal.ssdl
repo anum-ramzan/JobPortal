@@ -1,0 +1,704 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="JobPortalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbl_adminskill">
+    <Key>
+      <PropertyRef Name="a_skillid" />
+    </Key>
+    <Property Name="a_skillid" Type="int" Nullable="false" />
+    <Property Name="a_skillname" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tbl_applyjob">
+    <Key>
+      <PropertyRef Name="apply_id" />
+    </Key>
+    <Property Name="apply_id" Type="int" Nullable="false" />
+    <Property Name="u_id" Type="int" />
+    <Property Name="job_id" Type="int" />
+    <Property Name="apply_date" Type="date" />
+    <Property Name="job_status" Type="varchar" MaxLength="50" />
+    <Property Name="apply_attach" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_area">
+    <Key>
+      <PropertyRef Name="area_id" />
+    </Key>
+    <Property Name="area_id" Type="int" Nullable="false" />
+    <Property Name="area_name" Type="varchar" MaxLength="50" />
+    <Property Name="city_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_attachment">
+    <Key>
+      <PropertyRef Name="attach_id" />
+    </Key>
+    <Property Name="attach_id" Type="int" Nullable="false" />
+    <Property Name="u_id" Type="int" />
+    <Property Name="attach_title" Type="varchar(max)" />
+    <Property Name="attach_date" Type="date" />
+    <Property Name="attach_location" Type="varchar(max)" />
+    <Property Name="attach_status" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="tbl_careerlevel">
+    <Key>
+      <PropertyRef Name="careerlevel_id" />
+    </Key>
+    <Property Name="careerlevel_id" Type="int" Nullable="false" />
+    <Property Name="careerlevel_name" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tbl_city">
+    <Key>
+      <PropertyRef Name="city_id" />
+    </Key>
+    <Property Name="city_id" Type="int" Nullable="false" />
+    <Property Name="city_name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_company">
+    <Key>
+      <PropertyRef Name="c_id" />
+    </Key>
+    <Property Name="c_id" Type="int" Nullable="false" />
+    <Property Name="u_id" Type="int" />
+    <Property Name="c_name" Type="varchar" MaxLength="100" />
+    <Property Name="c_headname" Type="varchar" MaxLength="100" />
+    <Property Name="c_website" Type="varchar" MaxLength="100" />
+    <Property Name="c_phone" Type="varchar" MaxLength="100" />
+    <Property Name="industry_id" Type="int" />
+    <Property Name="c_details" Type="varchar" MaxLength="2000" />
+    <Property Name="c_area" Type="int" />
+    <Property Name="c_address" Type="varchar" MaxLength="100" />
+    <Property Name="c_email" Type="varchar" MaxLength="100" />
+    <Property Name="c_logo" Type="varchar(max)" />
+    <Property Name="c_status" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_degree">
+    <Key>
+      <PropertyRef Name="degree_id" />
+    </Key>
+    <Property Name="degree_id" Type="int" Nullable="false" />
+    <Property Name="degree_level" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tbl_degree_level">
+    <Key>
+      <PropertyRef Name="dl_id" />
+    </Key>
+    <Property Name="dl_id" Type="int" Nullable="false" />
+    <Property Name="dl_type" Type="varchar" MaxLength="100" />
+    <Property Name="degree_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_education">
+    <Key>
+      <PropertyRef Name="edu_id" />
+    </Key>
+    <Property Name="edu_id" Type="int" Nullable="false" />
+    <Property Name="u_id" Type="int" />
+    <Property Name="degree_level" Type="int" />
+    <Property Name="edu_institute" Type="varchar" MaxLength="100" />
+    <Property Name="edu_completion" Type="date" />
+    <Property Name="edu_result" Type="varchar" MaxLength="20" />
+    <Property Name="edu_other" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'JobPortal.dbo.tbl_error_log' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tbl_error_log">
+    <Key>
+      <PropertyRef Name="error_id" />
+    </Key>
+    <Property Name="error_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="error_msg" Type="varchar(max)" />
+    <Property Name="error_source" Type="varchar(max)" />
+    <Property Name="error_date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_experience">
+    <Key>
+      <PropertyRef Name="exp_id" />
+    </Key>
+    <Property Name="exp_id" Type="int" Nullable="false" />
+    <Property Name="u_id" Type="int" />
+    <Property Name="exp_jobtitle" Type="varchar" MaxLength="100" />
+    <Property Name="exp_company" Type="varchar" MaxLength="100" />
+    <Property Name="exp_startdate" Type="date" />
+    <Property Name="exp_enddate" Type="varchar" MaxLength="100" />
+    <Property Name="exp_description" Type="varchar" MaxLength="2000" />
+  </EntityType>
+  <EntityType Name="tbl_experinceyr">
+    <Key>
+      <PropertyRef Name="experince_id" />
+    </Key>
+    <Property Name="experince_id" Type="int" Nullable="false" />
+    <Property Name="experince_name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_industry">
+    <Key>
+      <PropertyRef Name="industry_id" />
+    </Key>
+    <Property Name="industry_id" Type="int" Nullable="false" />
+    <Property Name="industry_name" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tbl_jobPost">
+    <Key>
+      <PropertyRef Name="job_id" />
+    </Key>
+    <Property Name="job_id" Type="int" Nullable="false" />
+    <Property Name="c_id" Type="int" />
+    <Property Name="job_title" Type="varchar" MaxLength="50" />
+    <Property Name="job_description" Type="varchar" MaxLength="2000" />
+    <Property Name="job_skill" Type="varchar" MaxLength="2000" />
+    <Property Name="u_area" Type="int" />
+    <Property Name="job_careerlevel" Type="int" />
+    <Property Name="job_salaryfrom" Type="int" />
+    <Property Name="job_salaryto" Type="int" />
+    <Property Name="job_shift" Type="varchar" MaxLength="50" />
+    <Property Name="job_type" Type="int" />
+    <Property Name="job_experience" Type="int" />
+    <Property Name="job_degree" Type="int" />
+    <Property Name="job_gender" Type="varchar" MaxLength="100" />
+    <Property Name="job_position" Type="int" />
+    <Property Name="job_applydate" Type="date" />
+    <Property Name="job_addedon" Type="date" />
+    <Property Name="job_status" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_jobtype">
+    <Key>
+      <PropertyRef Name="jobtype_id" />
+    </Key>
+    <Property Name="jobtype_id" Type="int" Nullable="false" />
+    <Property Name="jobtype_name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_profile">
+    <Key>
+      <PropertyRef Name="u_id" />
+    </Key>
+    <Property Name="u_id" Type="int" Nullable="false" />
+    <Property Name="u_fname" Type="varchar" MaxLength="50" />
+    <Property Name="u_lname" Type="varchar" MaxLength="50" />
+    <Property Name="u_email" Type="varchar" MaxLength="100" />
+    <Property Name="u_password" Type="varchar" MaxLength="50" />
+    <Property Name="gender" Type="varchar" MaxLength="6" />
+    <Property Name="u_dob" Type="varchar" MaxLength="50" />
+    <Property Name="u_cnic" Type="varchar" MaxLength="20" />
+    <Property Name="marital_status" Type="varchar" MaxLength="20" />
+    <Property Name="u_area" Type="int" />
+    <Property Name="u_address" Type="varchar" MaxLength="100" />
+    <Property Name="u_mobile" Type="varchar" MaxLength="20" />
+    <Property Name="u_phone" Type="varchar" MaxLength="20" />
+    <Property Name="u_type" Type="varchar" MaxLength="20" />
+    <Property Name="u_status" Type="varchar" MaxLength="20" />
+    <Property Name="u_image" Type="varchar(max)" />
+    <Property Name="u_registerdate" Type="date" />
+    <Property Name="experience" Type="int" />
+    <Property Name="career" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_project">
+    <Key>
+      <PropertyRef Name="project_id" />
+    </Key>
+    <Property Name="project_id" Type="int" Nullable="false" />
+    <Property Name="u_id" Type="int" />
+    <Property Name="project_title" Type="varchar" MaxLength="100" />
+    <Property Name="project_image" Type="varchar" MaxLength="100" />
+    <Property Name="project_url" Type="varchar" MaxLength="100" />
+    <Property Name="project_startdate" Type="date" />
+    <Property Name="project_enddate" Type="date" />
+    <Property Name="project_description" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="tbl_reset">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="userid" Type="int" />
+    <Property Name="resetdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_skill">
+    <Key>
+      <PropertyRef Name="skill_id" />
+    </Key>
+    <Property Name="skill_id" Type="int" Nullable="false" />
+    <Property Name="u_id" Type="int" />
+    <Property Name="skill_type" Type="varchar" MaxLength="100" />
+    <Property Name="skill_level" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tbl_summary">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="userid" Type="int" />
+    <Property Name="summary" Type="varchar" MaxLength="2000" />
+  </EntityType>
+  <EntityType Name="tbl_testimonial">
+    <Key>
+      <PropertyRef Name="testimonial_id" />
+    </Key>
+    <Property Name="testimonial_id" Type="int" Nullable="false" />
+    <Property Name="testimonial_name" Type="varchar" MaxLength="70" />
+    <Property Name="testimonial_designation" Type="varchar" MaxLength="70" />
+    <Property Name="testimonial_company" Type="varchar" MaxLength="70" />
+    <Property Name="testimonial_image" Type="varchar" MaxLength="100" />
+    <Property Name="testimonial_review" Type="varchar" MaxLength="500" />
+    <Property Name="testimonial_status" Type="varchar" MaxLength="5" />
+  </EntityType>
+  <Association Name="fk_apply_attachment">
+    <End Role="tbl_attachment" Type="Self.tbl_attachment" Multiplicity="0..1" />
+    <End Role="tbl_applyjob" Type="Self.tbl_applyjob" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_attachment">
+        <PropertyRef Name="attach_id" />
+      </Principal>
+      <Dependent Role="tbl_applyjob">
+        <PropertyRef Name="apply_attach" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_apply_job">
+    <End Role="tbl_jobPost" Type="Self.tbl_jobPost" Multiplicity="0..1" />
+    <End Role="tbl_applyjob" Type="Self.tbl_applyjob" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_jobPost">
+        <PropertyRef Name="job_id" />
+      </Principal>
+      <Dependent Role="tbl_applyjob">
+        <PropertyRef Name="job_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_apply_userid">
+    <End Role="tbl_profile" Type="Self.tbl_profile" Multiplicity="0..1" />
+    <End Role="tbl_applyjob" Type="Self.tbl_applyjob" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_profile">
+        <PropertyRef Name="u_id" />
+      </Principal>
+      <Dependent Role="tbl_applyjob">
+        <PropertyRef Name="u_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_area_city">
+    <End Role="tbl_city" Type="Self.tbl_city" Multiplicity="0..1" />
+    <End Role="tbl_area" Type="Self.tbl_area" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_city">
+        <PropertyRef Name="city_id" />
+      </Principal>
+      <Dependent Role="tbl_area">
+        <PropertyRef Name="city_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_attachment_user">
+    <End Role="tbl_profile" Type="Self.tbl_profile" Multiplicity="0..1" />
+    <End Role="tbl_attachment" Type="Self.tbl_attachment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_profile">
+        <PropertyRef Name="u_id" />
+      </Principal>
+      <Dependent Role="tbl_attachment">
+        <PropertyRef Name="u_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_company_area">
+    <End Role="tbl_area" Type="Self.tbl_area" Multiplicity="0..1" />
+    <End Role="tbl_company" Type="Self.tbl_company" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_area">
+        <PropertyRef Name="area_id" />
+      </Principal>
+      <Dependent Role="tbl_company">
+        <PropertyRef Name="c_area" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_company_industry">
+    <End Role="tbl_industry" Type="Self.tbl_industry" Multiplicity="0..1" />
+    <End Role="tbl_company" Type="Self.tbl_company" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_industry">
+        <PropertyRef Name="industry_id" />
+      </Principal>
+      <Dependent Role="tbl_company">
+        <PropertyRef Name="industry_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_company_userid">
+    <End Role="tbl_profile" Type="Self.tbl_profile" Multiplicity="0..1" />
+    <End Role="tbl_company" Type="Self.tbl_company" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_profile">
+        <PropertyRef Name="u_id" />
+      </Principal>
+      <Dependent Role="tbl_company">
+        <PropertyRef Name="u_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_degreelevel_degree">
+    <End Role="tbl_degree" Type="Self.tbl_degree" Multiplicity="0..1" />
+    <End Role="tbl_degree_level" Type="Self.tbl_degree_level" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_degree">
+        <PropertyRef Name="degree_id" />
+      </Principal>
+      <Dependent Role="tbl_degree_level">
+        <PropertyRef Name="degree_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_education_degree">
+    <End Role="tbl_degree_level" Type="Self.tbl_degree_level" Multiplicity="0..1" />
+    <End Role="tbl_education" Type="Self.tbl_education" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_degree_level">
+        <PropertyRef Name="dl_id" />
+      </Principal>
+      <Dependent Role="tbl_education">
+        <PropertyRef Name="degree_level" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_education_user">
+    <End Role="tbl_profile" Type="Self.tbl_profile" Multiplicity="0..1" />
+    <End Role="tbl_education" Type="Self.tbl_education" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_profile">
+        <PropertyRef Name="u_id" />
+      </Principal>
+      <Dependent Role="tbl_education">
+        <PropertyRef Name="u_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_experience_userid">
+    <End Role="tbl_profile" Type="Self.tbl_profile" Multiplicity="0..1" />
+    <End Role="tbl_experience" Type="Self.tbl_experience" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_profile">
+        <PropertyRef Name="u_id" />
+      </Principal>
+      <Dependent Role="tbl_experience">
+        <PropertyRef Name="u_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_jobpost_area">
+    <End Role="tbl_area" Type="Self.tbl_area" Multiplicity="0..1" />
+    <End Role="tbl_jobPost" Type="Self.tbl_jobPost" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_area">
+        <PropertyRef Name="area_id" />
+      </Principal>
+      <Dependent Role="tbl_jobPost">
+        <PropertyRef Name="u_area" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_jobpost_careerlevel">
+    <End Role="tbl_careerlevel" Type="Self.tbl_careerlevel" Multiplicity="0..1" />
+    <End Role="tbl_jobPost" Type="Self.tbl_jobPost" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_careerlevel">
+        <PropertyRef Name="careerlevel_id" />
+      </Principal>
+      <Dependent Role="tbl_jobPost">
+        <PropertyRef Name="job_careerlevel" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_jobpost_company">
+    <End Role="tbl_company" Type="Self.tbl_company" Multiplicity="0..1" />
+    <End Role="tbl_jobPost" Type="Self.tbl_jobPost" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_company">
+        <PropertyRef Name="c_id" />
+      </Principal>
+      <Dependent Role="tbl_jobPost">
+        <PropertyRef Name="c_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_jobpost_degree">
+    <End Role="tbl_degree_level" Type="Self.tbl_degree_level" Multiplicity="0..1" />
+    <End Role="tbl_jobPost" Type="Self.tbl_jobPost" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_degree_level">
+        <PropertyRef Name="dl_id" />
+      </Principal>
+      <Dependent Role="tbl_jobPost">
+        <PropertyRef Name="job_degree" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_jobpost_experience">
+    <End Role="tbl_experinceyr" Type="Self.tbl_experinceyr" Multiplicity="0..1" />
+    <End Role="tbl_jobPost" Type="Self.tbl_jobPost" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_experinceyr">
+        <PropertyRef Name="experince_id" />
+      </Principal>
+      <Dependent Role="tbl_jobPost">
+        <PropertyRef Name="job_experience" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_jobpost_jobtype">
+    <End Role="tbl_jobtype" Type="Self.tbl_jobtype" Multiplicity="0..1" />
+    <End Role="tbl_jobPost" Type="Self.tbl_jobPost" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_jobtype">
+        <PropertyRef Name="jobtype_id" />
+      </Principal>
+      <Dependent Role="tbl_jobPost">
+        <PropertyRef Name="job_type" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_profile_area">
+    <End Role="tbl_area" Type="Self.tbl_area" Multiplicity="0..1" />
+    <End Role="tbl_profile" Type="Self.tbl_profile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_area">
+        <PropertyRef Name="area_id" />
+      </Principal>
+      <Dependent Role="tbl_profile">
+        <PropertyRef Name="u_area" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_profile_career">
+    <End Role="tbl_careerlevel" Type="Self.tbl_careerlevel" Multiplicity="0..1" />
+    <End Role="tbl_profile" Type="Self.tbl_profile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_careerlevel">
+        <PropertyRef Name="careerlevel_id" />
+      </Principal>
+      <Dependent Role="tbl_profile">
+        <PropertyRef Name="career" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_profile_experience">
+    <End Role="tbl_experinceyr" Type="Self.tbl_experinceyr" Multiplicity="0..1" />
+    <End Role="tbl_profile" Type="Self.tbl_profile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_experinceyr">
+        <PropertyRef Name="experince_id" />
+      </Principal>
+      <Dependent Role="tbl_profile">
+        <PropertyRef Name="experience" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_project_userid">
+    <End Role="tbl_profile" Type="Self.tbl_profile" Multiplicity="0..1" />
+    <End Role="tbl_project" Type="Self.tbl_project" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_profile">
+        <PropertyRef Name="u_id" />
+      </Principal>
+      <Dependent Role="tbl_project">
+        <PropertyRef Name="u_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_reset_userid">
+    <End Role="tbl_profile" Type="Self.tbl_profile" Multiplicity="0..1" />
+    <End Role="tbl_reset" Type="Self.tbl_reset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_profile">
+        <PropertyRef Name="u_id" />
+      </Principal>
+      <Dependent Role="tbl_reset">
+        <PropertyRef Name="userid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_skill_userid">
+    <End Role="tbl_profile" Type="Self.tbl_profile" Multiplicity="0..1" />
+    <End Role="tbl_skill" Type="Self.tbl_skill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_profile">
+        <PropertyRef Name="u_id" />
+      </Principal>
+      <Dependent Role="tbl_skill">
+        <PropertyRef Name="u_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_summary_userid">
+    <End Role="tbl_profile" Type="Self.tbl_profile" Multiplicity="0..1" />
+    <End Role="tbl_summary" Type="Self.tbl_summary" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_profile">
+        <PropertyRef Name="u_id" />
+      </Principal>
+      <Dependent Role="tbl_summary">
+        <PropertyRef Name="userid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="auto_profile" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_insert_register_emp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="u_id" Type="int" Mode="In" />
+    <Parameter Name="u_fname" Type="varchar" Mode="In" />
+    <Parameter Name="u_lname" Type="varchar" Mode="In" />
+    <Parameter Name="u_email" Type="varchar" Mode="In" />
+    <Parameter Name="u_password" Type="varchar" Mode="In" />
+    <Parameter Name="u_mobile" Type="varchar" Mode="In" />
+    <Parameter Name="u_date" Type="date" Mode="In" />
+  </Function>
+  <Function Name="sp_insert_register_js" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="u_id" Type="int" Mode="In" />
+    <Parameter Name="u_fname" Type="varchar" Mode="In" />
+    <Parameter Name="u_lname" Type="varchar" Mode="In" />
+    <Parameter Name="u_email" Type="varchar" Mode="In" />
+    <Parameter Name="u_password" Type="varchar" Mode="In" />
+    <Parameter Name="u_mobile" Type="varchar" Mode="In" />
+    <Parameter Name="u_date" Type="date" Mode="In" />
+  </Function>
+  <Function Name="sp_select_alljob" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_select_category" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_select_frontjob" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_select_login_emp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="u_email" Type="varchar" Mode="In" />
+    <Parameter Name="u_password" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_select_login_js" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="u_email" Type="varchar" Mode="In" />
+    <Parameter Name="u_password" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_select_subCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="category" Type="varchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="JobPortalModelStoreContainer">
+    <EntitySet Name="tbl_adminskill" EntityType="Self.tbl_adminskill" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_applyjob" EntityType="Self.tbl_applyjob" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_area" EntityType="Self.tbl_area" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_attachment" EntityType="Self.tbl_attachment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_careerlevel" EntityType="Self.tbl_careerlevel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_city" EntityType="Self.tbl_city" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_company" EntityType="Self.tbl_company" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_degree" EntityType="Self.tbl_degree" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_degree_level" EntityType="Self.tbl_degree_level" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_education" EntityType="Self.tbl_education" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_experience" EntityType="Self.tbl_experience" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_experinceyr" EntityType="Self.tbl_experinceyr" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_industry" EntityType="Self.tbl_industry" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_jobPost" EntityType="Self.tbl_jobPost" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_jobtype" EntityType="Self.tbl_jobtype" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_profile" EntityType="Self.tbl_profile" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_project" EntityType="Self.tbl_project" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_reset" EntityType="Self.tbl_reset" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_skill" EntityType="Self.tbl_skill" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_summary" EntityType="Self.tbl_summary" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_testimonial" EntityType="Self.tbl_testimonial" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_error_log" EntityType="Self.tbl_error_log" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tbl_error_log].[error_id] AS [error_id], 
+    [tbl_error_log].[error_msg] AS [error_msg], 
+    [tbl_error_log].[error_source] AS [error_source], 
+    [tbl_error_log].[error_date] AS [error_date]
+    FROM [dbo].[tbl_error_log] AS [tbl_error_log]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="fk_apply_attachment" Association="Self.fk_apply_attachment">
+      <End Role="tbl_attachment" EntitySet="tbl_attachment" />
+      <End Role="tbl_applyjob" EntitySet="tbl_applyjob" />
+    </AssociationSet>
+    <AssociationSet Name="fk_apply_job" Association="Self.fk_apply_job">
+      <End Role="tbl_jobPost" EntitySet="tbl_jobPost" />
+      <End Role="tbl_applyjob" EntitySet="tbl_applyjob" />
+    </AssociationSet>
+    <AssociationSet Name="fk_apply_userid" Association="Self.fk_apply_userid">
+      <End Role="tbl_profile" EntitySet="tbl_profile" />
+      <End Role="tbl_applyjob" EntitySet="tbl_applyjob" />
+    </AssociationSet>
+    <AssociationSet Name="fk_area_city" Association="Self.fk_area_city">
+      <End Role="tbl_city" EntitySet="tbl_city" />
+      <End Role="tbl_area" EntitySet="tbl_area" />
+    </AssociationSet>
+    <AssociationSet Name="fk_attachment_user" Association="Self.fk_attachment_user">
+      <End Role="tbl_profile" EntitySet="tbl_profile" />
+      <End Role="tbl_attachment" EntitySet="tbl_attachment" />
+    </AssociationSet>
+    <AssociationSet Name="fk_company_area" Association="Self.fk_company_area">
+      <End Role="tbl_area" EntitySet="tbl_area" />
+      <End Role="tbl_company" EntitySet="tbl_company" />
+    </AssociationSet>
+    <AssociationSet Name="fk_company_industry" Association="Self.fk_company_industry">
+      <End Role="tbl_industry" EntitySet="tbl_industry" />
+      <End Role="tbl_company" EntitySet="tbl_company" />
+    </AssociationSet>
+    <AssociationSet Name="fk_company_userid" Association="Self.fk_company_userid">
+      <End Role="tbl_profile" EntitySet="tbl_profile" />
+      <End Role="tbl_company" EntitySet="tbl_company" />
+    </AssociationSet>
+    <AssociationSet Name="fk_degreelevel_degree" Association="Self.fk_degreelevel_degree">
+      <End Role="tbl_degree" EntitySet="tbl_degree" />
+      <End Role="tbl_degree_level" EntitySet="tbl_degree_level" />
+    </AssociationSet>
+    <AssociationSet Name="fk_education_degree" Association="Self.fk_education_degree">
+      <End Role="tbl_degree_level" EntitySet="tbl_degree_level" />
+      <End Role="tbl_education" EntitySet="tbl_education" />
+    </AssociationSet>
+    <AssociationSet Name="fk_education_user" Association="Self.fk_education_user">
+      <End Role="tbl_profile" EntitySet="tbl_profile" />
+      <End Role="tbl_education" EntitySet="tbl_education" />
+    </AssociationSet>
+    <AssociationSet Name="fk_experience_userid" Association="Self.fk_experience_userid">
+      <End Role="tbl_profile" EntitySet="tbl_profile" />
+      <End Role="tbl_experience" EntitySet="tbl_experience" />
+    </AssociationSet>
+    <AssociationSet Name="fk_jobpost_area" Association="Self.fk_jobpost_area">
+      <End Role="tbl_area" EntitySet="tbl_area" />
+      <End Role="tbl_jobPost" EntitySet="tbl_jobPost" />
+    </AssociationSet>
+    <AssociationSet Name="fk_jobpost_careerlevel" Association="Self.fk_jobpost_careerlevel">
+      <End Role="tbl_careerlevel" EntitySet="tbl_careerlevel" />
+      <End Role="tbl_jobPost" EntitySet="tbl_jobPost" />
+    </AssociationSet>
+    <AssociationSet Name="fk_jobpost_company" Association="Self.fk_jobpost_company">
+      <End Role="tbl_company" EntitySet="tbl_company" />
+      <End Role="tbl_jobPost" EntitySet="tbl_jobPost" />
+    </AssociationSet>
+    <AssociationSet Name="fk_jobpost_degree" Association="Self.fk_jobpost_degree">
+      <End Role="tbl_degree_level" EntitySet="tbl_degree_level" />
+      <End Role="tbl_jobPost" EntitySet="tbl_jobPost" />
+    </AssociationSet>
+    <AssociationSet Name="fk_jobpost_experience" Association="Self.fk_jobpost_experience">
+      <End Role="tbl_experinceyr" EntitySet="tbl_experinceyr" />
+      <End Role="tbl_jobPost" EntitySet="tbl_jobPost" />
+    </AssociationSet>
+    <AssociationSet Name="fk_jobpost_jobtype" Association="Self.fk_jobpost_jobtype">
+      <End Role="tbl_jobtype" EntitySet="tbl_jobtype" />
+      <End Role="tbl_jobPost" EntitySet="tbl_jobPost" />
+    </AssociationSet>
+    <AssociationSet Name="fk_profile_area" Association="Self.fk_profile_area">
+      <End Role="tbl_area" EntitySet="tbl_area" />
+      <End Role="tbl_profile" EntitySet="tbl_profile" />
+    </AssociationSet>
+    <AssociationSet Name="fk_profile_career" Association="Self.fk_profile_career">
+      <End Role="tbl_careerlevel" EntitySet="tbl_careerlevel" />
+      <End Role="tbl_profile" EntitySet="tbl_profile" />
+    </AssociationSet>
+    <AssociationSet Name="fk_profile_experience" Association="Self.fk_profile_experience">
+      <End Role="tbl_experinceyr" EntitySet="tbl_experinceyr" />
+      <End Role="tbl_profile" EntitySet="tbl_profile" />
+    </AssociationSet>
+    <AssociationSet Name="fk_project_userid" Association="Self.fk_project_userid">
+      <End Role="tbl_profile" EntitySet="tbl_profile" />
+      <End Role="tbl_project" EntitySet="tbl_project" />
+    </AssociationSet>
+    <AssociationSet Name="fk_reset_userid" Association="Self.fk_reset_userid">
+      <End Role="tbl_profile" EntitySet="tbl_profile" />
+      <End Role="tbl_reset" EntitySet="tbl_reset" />
+    </AssociationSet>
+    <AssociationSet Name="fk_skill_userid" Association="Self.fk_skill_userid">
+      <End Role="tbl_profile" EntitySet="tbl_profile" />
+      <End Role="tbl_skill" EntitySet="tbl_skill" />
+    </AssociationSet>
+    <AssociationSet Name="fk_summary_userid" Association="Self.fk_summary_userid">
+      <End Role="tbl_profile" EntitySet="tbl_profile" />
+      <End Role="tbl_summary" EntitySet="tbl_summary" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

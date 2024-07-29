@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{BB6D54CE-9DF2-41B7-B3C5-6AF3D16D7AA7}|">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="AptechNewJobPortal/Web.config">
+    <Files>
+      <File FileName="../../../../Applications/Visual Studio.app/Contents/MonoBundle/MSBuild/Current/bin/Microsoft.Common.CurrentVersion.targets" Line="2221" Column="28" />
+      <File FileName="AptechNewJobPortal/Web.config" Line="29" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AptechNewJobPortal" expanded="True">
+            <Node name="AptechNewJobPortal" expanded="True">
+              <Node name="Model" expanded="True">
+                <Node name="AjaxEnabledService.svc" expanded="True" />
+              </Node>
+              <Node name="job-details.aspx" expanded="True" />
+              <Node name="Web.config" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.AptechNewJobPortal PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

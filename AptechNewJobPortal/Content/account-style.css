@@ -1,0 +1,29 @@
+﻿
+.forgot-account,
+.employer-account {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e6f0a3+0,dbf043+45,dbf043+45,d2e638+58,d2e638+58,c3d825+74 */
+    background: rgb(230,240,163); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgb(230,240,163) 0%, rgb(219,240,67) 45%, rgb(219,240,67) 45%, rgb(210,230,56) 58%, rgb(210,230,56) 58%, rgb(195,216,37) 74%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgb(230,240,163) 0%,rgb(219,240,67) 45%,rgb(219,240,67) 45%,rgb(210,230,56) 58%,rgb(210,230,56) 58%,rgb(195,216,37) 74%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgb(230,240,163) 0%,rgb(219,240,67) 45%,rgb(219,240,67) 45%,rgb(210,230,56) 58%,rgb(210,230,56) 58%,rgb(195,216,37) 74%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6f0a3', endColorstr='#c3d825',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    margin-top: -20px;
+}
+
+.resend-account,
+.jobseeker-account {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2748aa+0,152659+100 */
+    background: rgb(39,72,170); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(39,72,170,1) 0%, rgba(21,38,89,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(39,72,170,1) 0%,rgba(21,38,89,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(39,72,170,1) 0%,rgba(21,38,89,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2748aa', endColorstr='#152659',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    margin-top: -20px;
+}
+
+.resend-account > div,
+.forgot-account > div,
+.employer-account > div,
+.jobseeker-account > div {
+    padding-top: 50px;
+}

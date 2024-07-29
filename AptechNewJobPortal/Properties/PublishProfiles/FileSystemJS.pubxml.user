@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\Users\anum.r\Desktop\JobPortal</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="accountrecovery.aspx">
+      <publishTime>02/19/2018 01:52:48</publishTime>
+    </File>
+    <File Include="activation-link.aspx">
+      <publishTime>02/17/2018 07:53:16</publishTime>
+    </File>
+    <File Include="Activation.aspx">
+      <publishTime>02/18/2018 17:15:42</publishTime>
+    </File>
+    <File Include="ActivationInvalid.aspx">
+      <publishTime>01/26/2018 09:11:08</publishTime>
+    </File>
+    <File Include="admin/Admin.Master">
+      <publishTime>08/07/2018 17:21:27</publishTime>
+    </File>
+    <File Include="admin/advertising.aspx">
+      <publishTime>02/24/2018 10:36:32</publishTime>
+    </File>
+    <File Include="admin/companies.aspx">
+      <publishTime>02/28/2018 02:37:08</publishTime>
+    </File>
+    <File Include="admin/employer.aspx">
+      <publishTime>02/24/2018 10:35:48</publishTime>
+    </File>
+    <File Include="admin/index.aspx">
+      <publishTime>02/24/2018 10:33:20</publishTime>
+    </File>
+    <File Include="admin/job-approved.aspx">
+      <publishTime>02/22/2018 05:24:24</publishTime>
+    </File>
+    <File Include="admin/job-pending.aspx">
+      <publishTime>02/21/2018 15:51:04</publishTime>
+    </File>
+    <File Include="admin/jobseeker.aspx">
+      <publishTime>01/26/2018 09:11:10</publishTime>
+    </File>
+    <File Include="admin/login.aspx">
+      <publishTime>01/26/2018 09:11:10</publishTime>
+    </File>
+    <File Include="admin/other.aspx">
+      <publishTime>01/26/2018 09:11:10</publishTime>
+    </File>
+    <File Include="admin/post-a-job.aspx">
+      <publishTime>03/27/2018 01:39:40</publishTime>
+    </File>
+    <File Include="admin/showdetails.aspx">
+      <publishTime>02/21/2018 18:01:30</publishTime>
+    </File>
+    <File Include="admin/showjobdetails.aspx">
+      <publishTime>02/22/2018 04:14:30</publishTime>
+    </File>
+    <File Include="admin/testimonial.aspx">
+      <publishTime>01/26/2018 09:11:10</publishTime>
+    </File>
+    <File Include="admin/viewdetails.aspx">
+      <publishTime>01/26/2018 09:11:10</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>01/26/2018 11:43:02</publishTime>
+    </File>
+    <File Include="bin/AptechNewJobPortal.dll">
+      <publishTime>08/10/2018 22:06:11</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>01/26/2018 11:41:50</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>01/26/2018 11:43:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>01/26/2018 11:10:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>01/26/2018 11:10:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>01/26/2018 11:39:58</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>01/26/2018 11:39:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>01/26/2018 11:40:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>01/26/2018 11:10:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>01/26/2018 11:10:12</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>01/26/2018 11:10:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>01/26/2018 11:10:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>01/26/2018 11:10:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>01/26/2018 11:10:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>01/26/2018 11:10:08</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>01/26/2018 11:41:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Cors.dll">
+      <publishTime>01/26/2018 11:41:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>01/26/2018 11:41:50</publishTime>
+    </File>
+    <File Include="blogs.aspx">
+      <publishTime>01/26/2018 09:11:08</publishTime>
+    </File>
+    <File Include="Content/account-style.css">
+      <publishTime>02/17/2018 06:57:04</publishTime>
+    </File>
+    <File Include="Content/account.css">
+      <publishTime>02/15/2018 21:11:26</publishTime>
+    </File>
+    <File Include="Content/admin.css">
+      <publishTime>02/28/2018 02:33:16</publishTime>
+    </File>
+    <File Include="Content/AdminLTE.min.css">
+      <publishTime>01/26/2018 09:12:32</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>01/26/2018 09:12:26</publishTime>
+    </File>
+    <File Include="Content/ionicons.min.css">
+      <publishTime>01/26/2018 09:12:20</publishTime>
+    </File>
+    <File Include="Content/site.css">
+      <publishTime>02/25/2018 11:57:42</publishTime>
+    </File>
+    <File Include="Content/skin-red.min.css">
+      <publishTime>01/26/2018 09:12:18</publishTime>
+    </File>
+    <File Include="Content/_all-skins.min.css">
+      <publishTime>01/26/2018 09:12:20</publishTime>
+    </File>
+    <File Include="default.aspx">
+      <publishTime>02/25/2018 11:58:02</publishTime>
+    </File>
+    <File Include="employer/applicant-details.aspx">
+      <publishTime>02/15/2018 21:19:16</publishTime>
+    </File>
+    <File Include="employer/applicants.aspx">
+      <publishTime>02/15/2018 21:17:46</publishTime>
+    </File>
+    <File Include="employer/company.aspx">
+      <publishTime>02/27/2018 16:48:10</publishTime>
+    </File>
+    <File Include="employer/edit-profile.aspx">
+      <publishTime>01/28/2018 17:31:24</publishTime>
+    </File>
+    <File Include="employer/Employer.Master">
+      <publishTime>08/07/2018 17:22:10</publishTime>
+    </File>
+    <File Include="employer/index.aspx">
+      <publishTime>02/11/2018 18:43:46</publishTime>
+    </File>
+    <File Include="employer/job-posted.aspx">
+      <publishTime>02/15/2018 20:21:56</publishTime>
+    </File>
+    <File Include="employer/login.aspx">
+      <publishTime>02/18/2018 16:51:58</publishTime>
+    </File>
+    <File Include="employer/post-a-job.aspx">
+      <publishTime>03/27/2018 01:39:02</publishTime>
+    </File>
+    <File Include="employer/profile-picture.aspx">
+      <publishTime>02/06/2018 18:22:12</publishTime>
+    </File>
+    <File Include="employer/profile.aspx">
+      <publishTime>01/28/2018 17:27:52</publishTime>
+    </File>
+    <File Include="employer/registration.aspx">
+      <publishTime>02/18/2018 16:50:56</publishTime>
+    </File>
+    <File Include="employer/resume-details.aspx">
+      <publishTime>02/15/2018 18:51:34</publishTime>
+    </File>
+    <File Include="employer/resumes.aspx">
+      <publishTime>02/13/2018 17:07:08</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.eot">
+      <publishTime>01/26/2018 09:13:40</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.svg">
+      <publishTime>01/26/2018 09:13:38</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.ttf">
+      <publishTime>01/26/2018 09:13:38</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff">
+      <publishTime>01/26/2018 09:13:30</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff2">
+      <publishTime>01/26/2018 09:13:36</publishTime>
+    </File>
+    <File Include="fonts/FontAwesome.otf">
+      <publishTime>01/26/2018 09:13:26</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>01/26/2018 09:13:26</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>01/26/2018 09:12:40</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>01/26/2018 09:12:38</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>01/26/2018 09:12:36</publishTime>
+    </File>
+    <File Include="fonts/ionicons.eot">
+      <publishTime>01/26/2018 09:12:46</publishTime>
+    </File>
+    <File Include="fonts/ionicons.svg">
+      <publishTime>01/26/2018 09:12:44</publishTime>
+    </File>
+    <File Include="fonts/ionicons.ttf">
+      <publishTime>01/26/2018 09:12:52</publishTime>
+    </File>
+    <File Include="fonts/ionicons.woff">
+      <publishTime>01/26/2018 09:12:40</publishTime>
+    </File>
+    <File Include="forgot-password.aspx">
+      <publishTime>02/17/2018 20:38:08</publishTime>
+    </File>
+    <File Include="ForgotPassword.html">
+      <publishTime>02/17/2018 19:38:44</publishTime>
+    </File>
+    <File Include="IAmAProudPakistani.html">
+      <publishTime>08/10/2018 22:10:30</publishTime>
+    </File>
+    <File Include="Images/ad1.jpg">
+      <publishTime>02/24/2018 10:36:54</publishTime>
+    </File>
+    <File Include="Images/ad2.png">
+      <publishTime>02/24/2018 10:36:54</publishTime>
+    </File>
+    <File Include="Images/ads.png">
+      <publishTime>01/26/2018 09:14:12</publishTime>
+    </File>
+    <File Include="Images/animated-overlay.gif">
+      <publishTime>01/26/2018 09:13:56</publishTime>
+    </File>
+    <File Include="Images/aptech.ico">
+      <publishTime>01/26/2018 09:13:58</publishTime>
+    </File>
+    <File Include="Images/aptech.png">
+      <publishTime>01/26/2018 09:14:26</publishTime>
+    </File>
+    <File Include="Images/blog_1.jpg">
+      <publishTime>01/26/2018 09:14:22</publishTime>
+    </File>
+    <File Include="Images/blog_2.jpg">
+      <publishTime>01/26/2018 09:14:50</publishTime>
+    </File>
+    <File Include="Images/blog_3.jpg">
+      <publishTime>01/26/2018 09:14:24</publishTime>
+    </File>
+    <File Include="Images/blog_4.jpg">
+      <publishTime>01/26/2018 09:14:10</publishTime>
+    </File>
+    <File Include="Images/boxed-bg.jpg">
+      <publishTime>01/26/2018 09:13:44</publishTime>
+    </File>
+    <File Include="Images/btn-default-bg.png">
+      <publishTime>01/26/2018 12:37:30</publishTime>
+    </File>
+    <File Include="Images/counter-background1.jpg">
+      <publishTime>02/05/2018 07:05:18</publishTime>
+    </File>
+    <File Include="Images/counter_background.jpg">
+      <publishTime>01/26/2018 09:13:48</publishTime>
+    </File>
+    <File Include="Images/counter_background2.jpg">
+      <publishTime>02/07/2018 10:44:26</publishTime>
+    </File>
+    <File Include="Images/datatable-loader.gif">
+      <publishTime>02/13/2018 17:01:42</publishTime>
+    </File>
+    <File Include="Images/employer.png">
+      <publishTime>01/26/2018 09:13:40</publishTime>
+    </File>
+    <File Include="Images/female.png">
+      <publishTime>01/26/2018 12:37:30</publishTime>
+    </File>
+    <File Include="Images/jobseeker.png">
+      <publishTime>01/26/2018 09:13:42</publishTime>
+    </File>
+    <File Include="Images/loading_gif.gif">
+      <publishTime>02/03/2018 05:01:38</publishTime>
+    </File>
+    <File Include="Images/login_background.png">
+      <publishTime>01/26/2018 09:13:40</publishTime>
+    </File>
+    <File Include="Images/logo.png">
+      <publishTime>01/26/2018 09:13:38</publishTime>
+    </File>
+    <File Include="Images/logo_aptech.png">
+      <publishTime>02/07/2018 10:44:08</publishTime>
+    </File>
+    <File Include="Images/logo_placement.png">
+      <publishTime>02/05/2018 06:08:10</publishTime>
+    </File>
+    <File Include="Images/male.png">
+      <publishTime>01/26/2018 12:37:30</publishTime>
+    </File>
+    <File Include="Images/nav_stripe.png">
+      <publishTime>01/26/2018 09:13:36</publishTime>
+    </File>
+    <File Include="Images/notfound.png">
+      <publishTime>02/11/2018 20:07:58</publishTime>
+    </File>
+    <File Include="Images/search-job.jpg">
+      <publishTime>02/21/2018 06:23:20</publishTime>
+    </File>
+    <File Include="Images/slider.jpg">
+      <publishTime>02/21/2018 06:23:20</publishTime>
+    </File>
+    <File Include="Images/user_img.png">
+      <publishTime>01/26/2018 09:13:28</publishTime>
+    </File>
+    <File Include="independance/assets/cover.jpg">
+      <publishTime>08/11/2018 18:05:00</publishTime>
+    </File>
+    <File Include="independance/assets/cover1.jpg">
+      <publishTime>08/11/2018 18:06:00</publishTime>
+    </File>
+    <File Include="independance/assets/custom-style.css">
+      <publishTime>08/10/2018 22:03:06</publishTime>
+    </File>
+    <File Include="independance/assets/custom.js">
+      <publishTime>08/10/2018 21:29:48</publishTime>
+    </File>
+    <File Include="independance/assets/header.png">
+      <publishTime>08/10/2018 21:56:10</publishTime>
+    </File>
+    <File Include="independance/assets/html2canvas.js">
+      <publishTime>08/10/2018 19:56:27</publishTime>
+    </File>
+    <File Include="independance/assets/style.css">
+      <publishTime>08/10/2018 19:56:27</publishTime>
+    </File>
+    <File Include="independance/inline.09a603031f5b093e9778.bundle.js">
+      <publishTime>08/10/2018 19:56:23</publishTime>
+    </File>
+    <File Include="independance/main.049497a751c8dfceb64a.bundle.js">
+      <publishTime>08/10/2018 19:56:23</publishTime>
+    </File>
+    <File Include="independance/polyfills.c08331153cbf9fd50ff5.bundle.js">
+      <publishTime>08/10/2018 19:56:23</publishTime>
+    </File>
+    <File Include="independance/styles.9c0ad738f18adc3d19ed.bundle.css">
+      <publishTime>08/10/2018 19:56:23</publishTime>
+    </File>
+    <File Include="Index.Master">
+      <publishTime>08/07/2018 17:22:08</publishTime>
+    </File>
+    <File Include="job-details.aspx">
+      <publishTime>01/30/2018 17:30:34</publishTime>
+    </File>
+    <File Include="JobApplyEmail.html">
+      <publishTime>02/17/2018 09:05:12</publishTime>
+    </File>
+    <File Include="JobApproved.html">
+      <publishTime>02/22/2018 04:29:18</publishTime>
+    </File>
+    <File Include="JobRejection.html">
+      <publishTime>05/18/2018 10:12:17</publishTime>
+    </File>
+    <File Include="jobs.aspx">
+      <publishTime>02/21/2018 14:01:28</publishTime>
+    </File>
+    <File Include="jobseeker/certifications.aspx">
+      <publishTime>02/06/2018 06:01:04</publishTime>
+    </File>
+    <File Include="jobseeker/cv.aspx">
+      <publishTime>02/05/2018 17:57:00</publishTime>
+    </File>
+    <File Include="jobseeker/edit-profile.aspx">
+      <publishTime>01/29/2018 02:36:02</publishTime>
+    </File>
+    <File Include="jobseeker/education.aspx">
+      <publishTime>01/29/2018 02:34:40</publishTime>
+    </File>
+    <File Include="jobseeker/experience.aspx">
+      <publishTime>02/15/2018 05:12:18</publishTime>
+    </File>
+    <File Include="jobseeker/index.aspx">
+      <publishTime>05/04/2018 12:39:36</publishTime>
+    </File>
+    <File Include="jobseeker/job-application.aspx">
+      <publishTime>05/04/2018 20:28:37</publishTime>
+    </File>
+    <File Include="jobseeker/Jobseeker.Master">
+      <publishTime>08/07/2018 17:22:10</publishTime>
+    </File>
+    <File Include="jobseeker/login.aspx">
+      <publishTime>02/18/2018 16:36:22</publishTime>
+    </File>
+    <File Include="jobseeker/portfolio.aspx">
+      <publishTime>02/15/2018 16:49:42</publishTime>
+    </File>
+    <File Include="jobseeker/profile-picture.aspx">
+      <publishTime>02/06/2018 18:20:20</publishTime>
+    </File>
+    <File Include="jobseeker/registration.aspx">
+      <publishTime>02/18/2018 16:50:32</publishTime>
+    </File>
+    <File Include="jobseeker/resume.aspx">
+      <publishTime>02/16/2018 10:56:06</publishTime>
+    </File>
+    <File Include="jobseeker/skills.aspx">
+      <publishTime>02/01/2018 04:09:04</publishTime>
+    </File>
+    <File Include="Logout.aspx">
+      <publishTime>01/26/2018 09:11:06</publishTime>
+    </File>
+    <File Include="Model/AjaxEnabledService.svc">
+      <publishTime>01/26/2018 09:14:46</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>04/25/2018 12:20:37</publishTime>
+    </File>
+    <File Include="PageNotFound.aspx">
+      <publishTime>02/11/2018 20:26:32</publishTime>
+    </File>
+    <File Include="RegistrationEmail.html">
+      <publishTime>02/17/2018 09:05:20</publishTime>
+    </File>
+    <File Include="Scripts/additional-methods.min.js">
+      <publishTime>01/26/2018 09:56:00</publishTime>
+    </File>
+    <File Include="Scripts/admin.js">
+      <publishTime>05/18/2018 09:54:38</publishTime>
+    </File>
+    <File Include="Scripts/adminlte.min.js">
+      <publishTime>01/26/2018 09:56:00</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>01/26/2018 09:55:52</publishTime>
+    </File>
+    <File Include="Scripts/counter.js">
+      <publishTime>01/26/2018 09:55:50</publishTime>
+    </File>
+    <File Include="Scripts/data-script.js">
+      <publishTime>02/23/2018 18:01:52</publishTime>
+    </File>
+    <File Include="Scripts/demo.js">
+      <publishTime>01/26/2018 09:55:54</publishTime>
+    </File>
+    <File Include="Scripts/employer.js">
+      <publishTime>05/04/2018 15:58:58</publishTime>
+    </File>
+    <File Include="Scripts/jobseeker.js">
+      <publishTime>05/04/2018 15:31:25</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>01/26/2018 09:55:52</publishTime>
+    </File>
+    <File Include="Scripts/jquery.knob.min.js">
+      <publishTime>01/26/2018 09:55:42</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>01/26/2018 09:55:42</publishTime>
+    </File>
+    <File Include="Scripts/pagination.js">
+      <publishTime>02/10/2018 07:55:22</publishTime>
+    </File>
+    <File Include="Scripts/pdfmake.min.js">
+      <publishTime>02/11/2018 22:31:40</publishTime>
+    </File>
+    <File Include="Scripts/vfs_fonts.js">
+      <publishTime>02/11/2018 22:31:44</publishTime>
+    </File>
+    <File Include="UnderMaintenance.aspx">
+      <publishTime>01/26/2018 09:11:04</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/22/2018 09:22:43</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,230 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="AptechNewJobPortal.admin.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Jobs ACE - Admin</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <!--Removing Cache-->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="icon" href="/Images/favicon.ico" />
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Content/AdminLTE.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.0/fullcalendar.min.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.10.16/css/dataTables.semanticui.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+    <link href="/Content/ionicons.min.css" rel="stylesheet" />
+    <link href="/Content/_all-skins.min.css" rel="stylesheet" />
+    <link href="/Content/admin.css" rel="stylesheet" />
+    
+    <script src="../Scripts/jquery-1.10.2.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="http://ajax.microsoft.com/ajax/jquery.validate/1.10.0/additional-methods.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="../Scripts/adminlte.min.js"></script>
+    <%--<script src="../Scripts/demo.js"></script>--%>
+    <%--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>--%>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.semanticui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.0/fullcalendar.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js" type="text/javascript"></script>
+
+    <script src="../Scripts/admin.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="skin-green sidebar-mini" style="height: auto; min-height: 100%;">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
+        <div class="wrapper wrapper-color">
+            <header class="main-header">
+                <!-- Logo -->
+                <a href="admin_default.aspx" class="logo">
+                    <!-- mini logo for sidebar mini 50x50 pixels -->
+                    <span class="logo-mini"><b>A</b>JP</span>
+                    <!-- logo for regular state and mobile devices -->
+                    <span class="logo-lg"><b>Jobs</b> ACE</span>
+                </a>
+                <!-- Header Navbar: style can be found in header.less -->
+                <nav class="navbar navbar-static-top">
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+                            <!-- User Account: style can be found in dropdown.less -->
+                            <li class="dropdown user user-menu" style="width: 200px;">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="../Images/aptech.png" class="user-image" alt="User Image" />
+                                    <span class="hidden-xs">Aptech Admin</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- User image -->
+                                    <li class="user-header">
+                                        <img src="../Images/aptech.png" class="img-circle" alt="User Image" />
+
+                                        <p>
+                                            Aptech Admin - Main Admin
+                 
+                                            <small>Member since Nov. 2016</small>
+                                        </p>
+                                    </li>
+                                    <!-- Menu Footer-->
+                                    <li class="user-footer">
+                                        <%--<div class="pull-left">
+                                            <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                        </div>--%>
+                                        <div class="">
+                                            <a href="../Logout.aspx" class="btn btn-default">Sign out</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="main-sidebar" style="background-color: #000 !important;">
+                <!-- sidebar: style can be found in sidebar.less -->
+                <section class="sidebar">
+                    <!-- Sidebar user panel -->
+                    <div class="user-panel">
+                        <div class="pull-left image dashboard-img">
+                            <img src="../Images/aptech.png" class="img-circle" alt="User Image" />
+                        </div>
+                        <div class="pull-left info dashboard-name">
+                            <p>Aptech Admin</p>
+                        </div>
+                    </div>
+                    <!-- sidebar menu: : style can be found in sidebar.less -->
+
+
+                    <ul class="sidebar-menu">
+                        <li>
+                            <asp:LinkButton ID="lb_dashboard" runat="server" OnClick="lb_dashboard_Click">
+                                        <i class="fa fa-dashboard"></i><span>Dashboard</span>
+                            </asp:LinkButton>
+                        </li>
+                        <li>
+                            <asp:LinkButton ID="lb_jobseeker" runat="server" OnClick="lb_jobseeker_Click">
+                                        <i class="fa fa-address-book"></i><span>Job Seeker</span>
+                            </asp:LinkButton>
+                        </li>
+                        <li>
+                            <asp:LinkButton ID="lb_employer" runat="server" OnClick="lb_employer_Click">
+                                        <i class="ion ion-person-stalker"></i><span>Employer</span>
+                            </asp:LinkButton>
+                        </li>
+                        <li>
+                            <asp:LinkButton ID="lb_approved" runat="server" OnClick="lb_approved_Click">
+                                        <i class="ion ion-ios-compose"></i><span>Job Approved</span>
+                            </asp:LinkButton>
+                        </li>
+                        <li>
+                            <asp:LinkButton ID="lb_pending" runat="server" OnClick="lb_pending_Click">
+                                        <i class="ion ion-ios-list-outline"></i><span>Job Pending</span>
+                            </asp:LinkButton>
+                        </li>
+                        <li>
+                            <asp:LinkButton ID="lb_advertise" runat="server" OnClick="lb_advertise_Click">
+                                        <i class="ion ion-ios-photos"></i><span>Advertise</span>
+                            </asp:LinkButton>
+                        </li>
+                        <li>
+                            <asp:LinkButton ID="lb_companies" runat="server" OnClick="lb_companies_Click">
+                                        <i class="fa fa-industry"></i><span>Companies</span>
+                            </asp:LinkButton>
+                        </li>
+                        <li>
+                            <asp:LinkButton ID="lb_post_job" runat="server" OnClick="lb_post_job_Click">
+                                        <i class="fa fa-list"></i><span>Post A Job</span>
+                            </asp:LinkButton>
+                        </li>
+<%--                        <li>
+                            <asp:LinkButton ID="lb_city" runat="server" OnClick="lb_city_Click">
+                                        <i class="fa fa-map-signs"></i><span>City</span>
+                            </asp:LinkButton>
+                        </li>
+                        <li>
+                            <asp:LinkButton ID="lb_area" runat="server" OnClick="lb_area_Click">
+                                        <i class="fa fa-home"></i><span>Areas</span>
+                            </asp:LinkButton>
+                        </li>
+                        <li>
+                            <asp:LinkButton ID="lb_skill" runat="server" OnClick="lb_skill_Click">
+                                        <i class="fa fa-area-chart"></i><span>Skills</span>
+                            </asp:LinkButton>
+                        </li>
+                        <li>
+                            <asp:LinkButton ID="lb_industry" runat="server" OnClick="lb_industry_Click">
+                                        <i class="fa fa-building"></i><span>Industries</span>
+                            </asp:LinkButton>
+                        </li>
+                        <li>
+                            <asp:LinkButton ID="ln_degree" runat="server" OnClick="ln_degree_Click">
+                                        <i class="fa fa-graduation-cap"></i><span>Degree</span>
+                            </asp:LinkButton>
+                        </li>
+                        <li>
+                            <asp:LinkButton ID="lb_degreetype" runat="server" OnClick="lb_degreetype_Click">
+                                        <i class="fa fa-book"></i><span>Degree Type</span>
+                            </asp:LinkButton>
+                        </li>
+                        <li>
+                            <asp:LinkButton ID="lb_careerlevel" runat="server" OnClick="lb_careerlevel_Click">
+                                        <i class="fa ion-arrow-graph-up-right"></i><span>Career Level</span>
+                            </asp:LinkButton>
+                        </li>
+                        <li>
+                            <asp:LinkButton ID="lb_jobtype" runat="server" OnClick="lb_jobtype_Click">
+                                        <i class=" fa fa-briefcase"></i><span>Job type</span>
+                            </asp:LinkButton>
+                        </li>
+                        <li>
+                            <asp:LinkButton ID="lb_experince" runat="server" OnClick="lb_experince_Click">
+                                        <i class="fa fa-star"></i><span>Experience</span>
+                            </asp:LinkButton>
+                        </li>--%>
+                        <li>
+                            <asp:LinkButton ID="lb_testimonial" runat="server" OnClick="lb_testimonial_Click">
+                                        <i class="fa fa-align-justify"></i><span>Student Testimonial</span>
+                            </asp:LinkButton>
+                        </li>
+                        <li>
+                            <asp:LinkButton ID="lb_other" runat="server" OnClick="lb_other_Click">
+                                        <i class="fa fa-list-alt"></i><span>Other</span>
+                            </asp:LinkButton>
+                        </li>
+                    </ul>
+                </section>
+                <!-- /.sidebar -->
+            </aside>
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </div>
+            <footer class="main-footer">
+                <div class="pull-right hidden-xs">
+                    <b>Aptech Computer Education </b>
+
+                </div>
+                <strong>Copyright &copy; 2018 </strong>All rights
+    reserved.
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

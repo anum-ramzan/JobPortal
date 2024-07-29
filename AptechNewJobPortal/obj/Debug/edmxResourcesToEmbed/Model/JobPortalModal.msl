@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="JobPortalModelStoreContainer" CdmEntityContainer="JobPortalEntities">
+    <EntitySetMapping Name="tbl_adminskill">
+      <EntityTypeMapping TypeName="JobPortalModel.tbl_adminskill">
+        <MappingFragment StoreEntitySet="tbl_adminskill">
+          <ScalarProperty Name="a_skillid" ColumnName="a_skillid" />
+          <ScalarProperty Name="a_skillname" ColumnName="a_skillname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_applyjob">
+      <EntityTypeMapping TypeName="JobPortalModel.tbl_applyjob">
+        <MappingFragment StoreEntitySet="tbl_applyjob">
+          <ScalarProperty Name="apply_id" ColumnName="apply_id" />
+          <ScalarProperty Name="u_id" ColumnName="u_id" />
+          <ScalarProperty Name="job_id" ColumnName="job_id" />
+          <ScalarProperty Name="apply_date" ColumnName="apply_date" />
+          <ScalarProperty Name="job_status" ColumnName="job_status" />
+          <ScalarProperty Name="apply_attach" ColumnName="apply_attach" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_area">
+      <EntityTypeMapping TypeName="JobPortalModel.tbl_area">
+        <MappingFragment StoreEntitySet="tbl_area">
+          <ScalarProperty Name="area_id" ColumnName="area_id" />
+          <ScalarProperty Name="area_name" ColumnName="area_name" />
+          <ScalarProperty Name="city_id" ColumnName="city_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_attachment">
+      <EntityTypeMapping TypeName="JobPortalModel.tbl_attachment">
+        <MappingFragment StoreEntitySet="tbl_attachment">
+          <ScalarProperty Name="attach_id" ColumnName="attach_id" />
+          <ScalarProperty Name="u_id" ColumnName="u_id" />
+          <ScalarProperty Name="attach_title" ColumnName="attach_title" />
+          <ScalarProperty Name="attach_date" ColumnName="attach_date" />
+          <ScalarProperty Name="attach_location" ColumnName="attach_location" />
+          <ScalarProperty Name="attach_status" ColumnName="attach_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_careerlevel">
+      <EntityTypeMapping TypeName="JobPortalModel.tbl_careerlevel">
+        <MappingFragment StoreEntitySet="tbl_careerlevel">
+          <ScalarProperty Name="careerlevel_id" ColumnName="careerlevel_id" />
+          <ScalarProperty Name="careerlevel_name" ColumnName="careerlevel_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_city">
+      <EntityTypeMapping TypeName="JobPortalModel.tbl_city">
+        <MappingFragment StoreEntitySet="tbl_city">
+          <ScalarProperty Name="city_id" ColumnName="city_id" />
+          <ScalarProperty Name="city_name" ColumnName="city_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_company">
+      <EntityTypeMapping TypeName="JobPortalModel.tbl_company">
+        <MappingFragment StoreEntitySet="tbl_company">
+          <ScalarProperty Name="c_id" ColumnName="c_id" />
+          <ScalarProperty Name="u_id" ColumnName="u_id" />
+          <ScalarProperty Name="c_name" ColumnName="c_name" />
+          <ScalarProperty Name="c_headname" ColumnName="c_headname" />
+          <ScalarProperty Name="c_website" ColumnName="c_website" />
+          <ScalarProperty Name="c_phone" ColumnName="c_phone" />
+          <ScalarProperty Name="industry_id" ColumnName="industry_id" />
+          <ScalarProperty Name="c_details" ColumnName="c_details" />
+          <ScalarProperty Name="c_area" ColumnName="c_area" />
+          <ScalarProperty Name="c_address" ColumnName="c_address" />
+          <ScalarProperty Name="c_email" ColumnName="c_email" />
+          <ScalarProperty Name="c_logo" ColumnName="c_logo" />
+          <ScalarProperty Name="c_status" ColumnName="c_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_degree">
+      <EntityTypeMapping TypeName="JobPortalModel.tbl_degree">
+        <MappingFragment StoreEntitySet="tbl_degree">
+          <ScalarProperty Name="degree_id" ColumnName="degree_id" />
+          <ScalarProperty Name="degree_level" ColumnName="degree_level" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_degree_level">
+      <EntityTypeMapping TypeName="JobPortalModel.tbl_degree_level">
+        <MappingFragment StoreEntitySet="tbl_degree_level">
+          <ScalarProperty Name="dl_id" ColumnName="dl_id" />
+          <ScalarProperty Name="dl_type" ColumnName="dl_type" />
+          <ScalarProperty Name="degree_id" ColumnName="degree_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_education">
+      <EntityTypeMapping TypeName="JobPortalModel.tbl_education">
+        <MappingFragment StoreEntitySet="tbl_education">
+          <ScalarProperty Name="edu_id" ColumnName="edu_id" />
+          <ScalarProperty Name="u_id" ColumnName="u_id" />
+          <ScalarProperty Name="degree_level" ColumnName="degree_level" />
+          <ScalarProperty Name="edu_institute" ColumnName="edu_institute" />
+          <ScalarProperty Name="edu_completion" ColumnName="edu_completion" />
+          <ScalarProperty Name="edu_result" ColumnName="edu_result" />
+          <ScalarProperty Name="edu_other" ColumnName="edu_other" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_experience">
+      <EntityTypeMapping TypeName="JobPortalModel.tbl_experience">
+        <MappingFragment StoreEntitySet="tbl_experience">
+          <ScalarProperty Name="exp_id" ColumnName="exp_id" />
+          <ScalarProperty Name="u_id" ColumnName="u_id" />
+          <ScalarProperty Name="exp_jobtitle" ColumnName="exp_jobtitle" />
+          <ScalarProperty Name="exp_company" ColumnName="exp_company" />
+          <ScalarProperty Name="exp_startdate" ColumnName="exp_startdate" />
+          <ScalarProperty Name="exp_enddate" ColumnName="exp_enddate" />
+          <ScalarProperty Name="exp_description" ColumnName="exp_description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_experinceyr">
+      <EntityTypeMapping TypeName="JobPortalModel.tbl_experinceyr">
+        <MappingFragment StoreEntitySet="tbl_experinceyr">
+          <ScalarProperty Name="experince_id" ColumnName="experince_id" />
+          <ScalarProperty Name="experince_name" ColumnName="experince_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_industry">
+      <EntityTypeMapping TypeName="JobPortalModel.tbl_industry">
+        <MappingFragment StoreEntitySet="tbl_industry">
+          <ScalarProperty Name="industry_id" ColumnName="industry_id" />
+          <ScalarProperty Name="industry_name" ColumnName="industry_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_jobPost">
+      <EntityTypeMapping TypeName="JobPortalModel.tbl_jobPost">
+        <MappingFragment StoreEntitySet="tbl_jobPost">
+          <ScalarProperty Name="job_id" ColumnName="job_id" />
+          <ScalarProperty Name="c_id" ColumnName="c_id" />
+          <ScalarProperty Name="job_title" ColumnName="job_title" />
+          <ScalarProperty Name="job_description" ColumnName="job_description" />
+          <ScalarProperty Name="job_skill" ColumnName="job_skill" />
+          <ScalarProperty Name="u_area" ColumnName="u_area" />
+          <ScalarProperty Name="job_careerlevel" ColumnName="job_careerlevel" />
+          <ScalarProperty Name="job_salaryfrom" ColumnName="job_salaryfrom" />
+          <ScalarProperty Name="job_salaryto" ColumnName="job_salaryto" />
+          <ScalarProperty Name="job_shift" ColumnName="job_shift" />
+          <ScalarProperty Name="job_type" ColumnName="job_type" />
+          <ScalarProperty Name="job_experience" ColumnName="job_experience" />
+          <ScalarProperty Name="job_degree" ColumnName="job_degree" />
+          <ScalarProperty Name="job_gender" ColumnName="job_gender" />
+          <ScalarProperty Name="job_position" ColumnName="job_position" />
+          <ScalarProperty Name="job_applydate" ColumnName="job_applydate" />
+          <ScalarProperty Name="job_addedon" ColumnName="job_addedon" />
+          <ScalarProperty Name="job_status" ColumnName="job_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_jobtype">
+      <EntityTypeMapping TypeName="JobPortalModel.tbl_jobtype">
+        <MappingFragment StoreEntitySet="tbl_jobtype">
+          <ScalarProperty Name="jobtype_id" ColumnName="jobtype_id" />
+          <ScalarProperty Name="jobtype_name" ColumnName="jobtype_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_profile">
+      <EntityTypeMapping TypeName="JobPortalModel.tbl_profile">
+        <MappingFragment StoreEntitySet="tbl_profile">
+          <ScalarProperty Name="u_id" ColumnName="u_id" />
+          <ScalarProperty Name="u_fname" ColumnName="u_fname" />
+          <ScalarProperty Name="u_lname" ColumnName="u_lname" />
+          <ScalarProperty Name="u_email" ColumnName="u_email" />
+          <ScalarProperty Name="u_password" ColumnName="u_password" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="u_dob" ColumnName="u_dob" />
+          <ScalarProperty Name="u_cnic" ColumnName="u_cnic" />
+          <ScalarProperty Name="marital_status" ColumnName="marital_status" />
+          <ScalarProperty Name="u_area" ColumnName="u_area" />
+          <ScalarProperty Name="u_address" ColumnName="u_address" />
+          <ScalarProperty Name="u_mobile" ColumnName="u_mobile" />
+          <ScalarProperty Name="u_phone" ColumnName="u_phone" />
+          <ScalarProperty Name="u_type" ColumnName="u_type" />
+          <ScalarProperty Name="u_status" ColumnName="u_status" />
+          <ScalarProperty Name="u_image" ColumnName="u_image" />
+          <ScalarProperty Name="u_registerdate" ColumnName="u_registerdate" />
+          <ScalarProperty Name="experience" ColumnName="experience" />
+          <ScalarProperty Name="career" ColumnName="career" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_project">
+      <EntityTypeMapping TypeName="JobPortalModel.tbl_project">
+        <MappingFragment StoreEntitySet="tbl_project">
+          <ScalarProperty Name="project_id" ColumnName="project_id" />
+          <ScalarProperty Name="u_id" ColumnName="u_id" />
+          <ScalarProperty Name="project_title" ColumnName="project_title" />
+          <ScalarProperty Name="project_image" ColumnName="project_image" />
+          <ScalarProperty Name="project_url" ColumnName="project_url" />
+          <ScalarProperty Name="project_startdate" ColumnName="project_startdate" />
+          <ScalarProperty Name="project_enddate" ColumnName="project_enddate" />
+          <ScalarProperty Name="project_description" ColumnName="project_description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_reset">
+      <EntityTypeMapping TypeName="JobPortalModel.tbl_reset">
+        <MappingFragment StoreEntitySet="tbl_reset">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="resetdate" ColumnName="resetdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_skill">
+      <EntityTypeMapping TypeName="JobPortalModel.tbl_skill">
+        <MappingFragment StoreEntitySet="tbl_skill">
+          <ScalarProperty Name="skill_id" ColumnName="skill_id" />
+          <ScalarProperty Name="u_id" ColumnName="u_id" />
+          <ScalarProperty Name="skill_type" ColumnName="skill_type" />
+          <ScalarProperty Name="skill_level" ColumnName="skill_level" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_summary">
+      <EntityTypeMapping TypeName="JobPortalModel.tbl_summary">
+        <MappingFragment StoreEntitySet="tbl_summary">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="summary" ColumnName="summary" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_testimonial">
+      <EntityTypeMapping TypeName="JobPortalModel.tbl_testimonial">
+        <MappingFragment StoreEntitySet="tbl_testimonial">
+          <ScalarProperty Name="testimonial_id" ColumnName="testimonial_id" />
+          <ScalarProperty Name="testimonial_name" ColumnName="testimonial_name" />
+          <ScalarProperty Name="testimonial_designation" ColumnName="testimonial_designation" />
+          <ScalarProperty Name="testimonial_company" ColumnName="testimonial_company" />
+          <ScalarProperty Name="testimonial_image" ColumnName="testimonial_image" />
+          <ScalarProperty Name="testimonial_review" ColumnName="testimonial_review" />
+          <ScalarProperty Name="testimonial_status" ColumnName="testimonial_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_error_log">
+      <EntityTypeMapping TypeName="JobPortalModel.tbl_error_log">
+        <MappingFragment StoreEntitySet="tbl_error_log">
+          <ScalarProperty Name="error_id" ColumnName="error_id" />
+          <ScalarProperty Name="error_msg" ColumnName="error_msg" />
+          <ScalarProperty Name="error_source" ColumnName="error_source" />
+          <ScalarProperty Name="error_date" ColumnName="error_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_insert_register_emp" FunctionName="JobPortalModel.Store.sp_insert_register_emp" />
+    <FunctionImportMapping FunctionImportName="sp_insert_register_js" FunctionName="JobPortalModel.Store.sp_insert_register_js" />
+    <FunctionImportMapping FunctionImportName="sp_select_alljob" FunctionName="JobPortalModel.Store.sp_select_alljob">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JobPortalModel.sp_select_alljob_Result">
+          <ScalarProperty Name="job_id" ColumnName="job_id" />
+          <ScalarProperty Name="job_applydate" ColumnName="job_applydate" />
+          <ScalarProperty Name="c_logo" ColumnName="c_logo" />
+          <ScalarProperty Name="job_title" ColumnName="job_title" />
+          <ScalarProperty Name="city_name" ColumnName="city_name" />
+          <ScalarProperty Name="c_name" ColumnName="c_name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_select_category" FunctionName="JobPortalModel.Store.sp_select_category" />
+    <FunctionImportMapping FunctionImportName="sp_select_frontjob" FunctionName="JobPortalModel.Store.sp_select_frontjob">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="JobPortalModel.sp_select_frontjob_Result">
+          <ScalarProperty Name="job_id" ColumnName="job_id" />
+          <ScalarProperty Name="job_applydate" ColumnName="job_applydate" />
+          <ScalarProperty Name="c_logo" ColumnName="c_logo" />
+          <ScalarProperty Name="job_title" ColumnName="job_title" />
+          <ScalarProperty Name="city_name" ColumnName="city_name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_select_login_emp" FunctionName="JobPortalModel.Store.sp_select_login_emp" />
+    <FunctionImportMapping FunctionImportName="sp_select_login_js" FunctionName="JobPortalModel.Store.sp_select_login_js" />
+    <FunctionImportMapping FunctionImportName="sp_select_subCategory" FunctionName="JobPortalModel.Store.sp_select_subCategory" />
+    <FunctionImportMapping FunctionImportName="auto_profile" FunctionName="JobPortalModel.Store.auto_profile" />
+  </EntityContainerMapping>
+</Mapping>
